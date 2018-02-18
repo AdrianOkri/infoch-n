@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-color: #eaeaea;
+    font-family: 'Kreon', serif;
+    text-align: center;
+}
+
+button {
+    font-family: 'Philosopher', sans-serif;
+    margin: 10px;
+    background: #37717f;
+    background: linear-gradient(to left, #37717f, #2a3959);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background:  #1F313C;
+    color: white;
+}
+
+th {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+td {
+    padding: 20px;
+}
+
+table, th, td {
+    border: 1px solid #273b47;
+    border-collapse: collapse;
+}
+
+p {
+    width: 1000px;
+    font-size: 20px;
+}
+
+.header-footer {
+    background: #1F313C;
+    padding: 15px;
+}
+
+.header-footer li {
+    display: inline-block;
+}
+
+.infoch {
+    font-family: 'Philosopher', sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+}
+
+.logo {
+    padding-bottom: 5%;
+    display: inline-block;
+    width: 100%;
+}
+
+.logo2 {
+    padding-bottom: 5%;
+    display: inline-block;
+}
+
+
+.temario a {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.tabla {
+    margin: 61px 0;
+}
+
+.ejemplos img {
+    display: inline-block;
+    width: 40%;
+    padding: 3%;
+}
+
+.ejemplos_c img {
+    border: 1px grey solid;
+    display: inline-block;
+    width: 70%;
+    padding: 3%;
+}
+
+.Cons {
+    font-size: 40px;
+    display: inline-block;
+} 
+.java img{
+    display: inline-block;
+    width: 20%;
+}
+
+@media screen and (max-width: 1063px){
+    p {
+        width: auto;
+    }
+}

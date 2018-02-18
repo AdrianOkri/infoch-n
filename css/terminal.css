@@ -1,0 +1,81 @@
+body {
+	background: black;
+	color: #1c9900;
+	margin: 0;
+}
+
+.header {
+	background: #1F313C;
+	padding: 0;
+}
+
+.header li {
+	display: inline-block;
+}
+
+.infoch {
+	font-family: 'Philosopher', sans-serif;
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+}
+
+
+button {
+	font-family: 'Philosopher', sans-serif;
+	margin: 10px;
+	background: #37717f;
+	background: linear-gradient(to left, #37717f, #2a3959);
+	cursor: pointer;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+section {
+	padding-left: 15px;
+}
+
+.terminal_logo {
+	border-radius: 12px;
+	float: left;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.introduccion {
+	display: inline-block;
+}
+
+.imagen {
+	display: inline-block;
+	padding: 20px;
+}
+
+.pagina {
+	background: black;
+	color: green;
+	font-size: 20px;
+}
+
+.footer {
+	
+	background: #1F313C;
+	color: white;
+	font-size: 30px;
+}
+.footer a {
+	font-family: 'Philosopher', sans-serif;
+	display: block;
+	color: white;
+	padding-bottom: 30px;
+	font-size: 40px;
+	text-decoration: none;
+}
+
+.footer button {
+	font-size: 30px;
+	position: relative;
+	top: -20px;
+}

@@ -1,0 +1,17 @@
+* {
+	background: #1F313C;
+}
+
+.titulo {
+	font-family: 'Philosopher', sans-serif;
+	font-size: 70px;
+}
+
+button {
+	font-family: 'Philosopher', sans-serif;
+	margin-top: 10px;
+	border-radius: 10px;
+	background: black;
+	color: white;
+	font-size: 30px;
+}

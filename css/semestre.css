@@ -1,0 +1,39 @@
+* {
+	background: #1F313C;
+}
+
+.todo {
+	text-align: center;
+}
+
+.titulo {
+	color: white;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 70px;
+}
+
+button {
+	font-family: 'Philosopher', sans-serif;
+	margin-top: 10px;
+	border-radius: 10px;
+	background: #37717f;
+	background: linear-gradient(to left, #37717f, #2a3959);
+	cursor: pointer;
+	color: white;
+	font-size: 30px;
+}
+
+ul {
+		list-style: none;
+		display: block;
+		padding: 0;
+}
+
+@media screen and (max-width: 529px) {
+    .titulo {
+	   font-size: 40px;
+    }
+    .logotipo {
+    	color: white;
+    }
+}

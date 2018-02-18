@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>C++</title>
+     <link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet"> 
+    <link rel="stylesheet" href="../../css/c_sharp.css" />
+</head>
+<body>
+  <center>
+  <header class="header-footer">
+    <h2 class="infoch">infoch@n</h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="../../index.html"><button>Home</button></a>
+            </li>
+            <li>
+                <a href="../../../buscador/index.html" target="_blank"><button>Tiru-Buscador</button></a>
+            </li>
+            <li>
+                <a href="../../index.html" target="_blank"><button>Proyectos</button></a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="logo2">
+    <img src="cpp_logo.png" width="15%">
+  </div>
+
+  <div class="temario">
+    <a href="#variables">Variables</a>
+    <a href="#ciclos">Condiciones</a>
+    <a href="#ciclos">Ciclos</a>
+    <a href="">Funciones</a>
+  </div>
+
+  <div>
+    <h2>Como iniciar en C++ (desde la terminal)</h2>
+    <p>Abrir la terminal y escribir los siguientes comandos <br>
+
+       pico nombre_del_archivo.c = para crear el texto plano de c++<br><br>
+
+       gcc nombre_del_archivo.c -o nombre_del_archivo = (solo si utlizas printf en lugar de cout)crear el ejecutable para la terminal<br><br>
+
+       g++ nombre_del_archivo.c - o nombre_del_archivo = (solo si utilizaras cout en lugar de print, osea iostream)<br><br>
+
+       ./nombre_del_archivo = ejecutar el archivo</p>
+  </div>
+
+ 
+    <section id="variables" class="tabla">
+     <h2>Variables</h2>
+     <h3>Tipos de datos compuestos</h3>
+     <p>En programación, una variable es un espacio de memoria reservado para almacenar un valor que corresponde a un tipo de dato soportado por el lenguaje de programación. Una variable es representada y usada a través de una etiqueta (un nombre) que le asigna un programador o que ya viene predefinida.<br><br>
+
+     Por ejemplo, en la variable de nombre "num", se almacena el número 8 (de tipo entero). De forma genérica, para utilizarla y sumarle un uno se debería programar: num = num + 1.<br><br>
+     Una variable puede ser del tipo boleano, entero, decimal de coma flotante, caracter, cadena de texto, arreglo, matriz, tipo definido por el usuario, etc. Estos son tipos de datos.<br><br>
+
+     Una variable, por lo general, como su nombre lo indica, puede variar su valor durante la ejecución del programa. Dependiendo del lenguaje de programación usado, también puede cambiar el tipo de dato que almacena..</p>
+      <div class="contenedor">
+      <table> <!--para crear tabla-->
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Clase.Net</th>
+            <th>Tipo</th>
+            <th>Ancho</th>
+            <th>Intervalo (bits)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>byte</td>
+            <td>Byte</td>
+            <td>Entero sin sigino</td>
+            <td>8</td>
+            <td>0 a 255</td>
+          </tr>
+
+          <tr>
+            <td>sbyte</td>
+            <td>SByte</td>
+            <td>Entero con signo</td>
+            <td>8</td>
+            <td>-128 a 127</td>
+          </tr>
+
+          <tr>
+            <td>int</td>
+            <td>int32</td>
+            <td>Entero con signo</td>
+            <td>32</td>
+            <td>-2,147,483,648 a 2,147,483,647</td>
+          </tr>
+
+          <tr>
+            <td>uint</td>
+            <td>Uint32</td>
+            <td>Entero sin signo</td>
+            <td>32</td>
+            <td>0 a 4294967295</td>
+          </tr>
+
+          <tr>
+            <td>short</td>
+            <td>int16</td>
+            <td>Entero con signo</td>
+            <td>16</td>
+            <td>0 a 65535</td>
+          </tr>
+
+          <tr>
+            <td>ushort</td>
+            <td>UInt16</td>
+            <td>Entero sin signo</td>
+            <td>16</td>
+            <td>0 a 65535</td>
+          </tr>
+
+          <tr>
+            <td>long</td>
+            <td>Int64</td>
+            <td>Entero con signo</td>
+            <td>64</td>
+            <td>-922337203685477508 a 922337203685477507</td>
+          </tr>
+
+          <tr>
+            <td>ulong</td>
+            <td>UInt</td>
+            <td>Entero sin signo</td>
+            <td>64</td>
+            <td>0 a 1844674407370955161</td>
+          </tr>
+
+          <tr>
+            <td>float</td>
+            <td>Single</td>
+            <td>Tipo de punto flotante simple</td>
+            <td>32</td>
+            <td>-3,402823e38 a 3,402823e38</td>
+          </tr>
+
+          <tr>
+            <td>double</td>
+            <td>Double</td>
+            <td>Tipo de punto flotante doble</td>
+            <td>64</td>
+            <td>-1,79769313486232e308 a 1,79769313486232e308</td>
+          </tr>
+
+          <tr>
+            <td>char</td>
+            <td>Char</td>
+            <td>Un carácter Unicode</td>
+            <td>16</td>
+            <td>Símbolos unicode</td>
+          </tr>
+
+          <tr>
+            <td>bool</td>
+            <td>Boolean</td>
+            <td>Tipo Boolean lógico</td>
+            <td>8</td>
+            <td>True o false</td>
+          </tr>
+
+          <tr>
+            <td>object</td>
+            <td>Object</td>
+            <td>Tipo de base de todos los otros tipos</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>string</td>
+            <td>String</td>
+            <td>Una secuencia de caracteres</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>decimal</td>
+            <td>Decimal</td>
+            <td>Tipo preciso fraccionario o integral</td>
+            <td>128</td>
+            <td>±1.0 × 10e−28 a ±7.9 × 10e28</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+    <section class="tabla">
+      <div class="contenedor">
+      <table>
+        <thead>
+          <tr>
+            <th>Comando</th>
+            <th>Definición</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>printf</td>
+          <td>Imprimir un mensaje</td>
+          <td>printf("Hola mundo");</td>
+        </tr>
+        <tr>
+          <td>cout</td>
+          <td>Imprimir un mensaje</td>
+          <td>cout<<"Hola mundo";</td>
+        </tr>
+        <tr>
+          <td>Convert</td>
+          <td>Guarda el valor que el usuario escribio en un variable</td>
+          <td>a = Convert.ToInt16(Console.ReadLine());</td>
+        </tr>
+        <tr>
+          <td>+ - * / % = == !=</td>
+          <td>Operadores matemáticos</td>
+          <td>a = b + c</td>
+        </tr>
+        <tr>
+          <td>Tabla de verdad && || !</td>
+          <td>&& = si ejemplo 1 es true y ejemplo 2 e true. el valor es true || = con que un valor sea true ! = negación, todos tienen qe ser falsos</td>
+          <td>2 > 1 && 8 > 4</td>
+        </tr>
+        <tr>
+          <td>if</td>
+          <td>condicional</td>
+          <td>if (true); { <br> //la condición se cumple <br> }s</td>
+        </tr>
+        <tr>
+          <td>while</td>
+          <td>ciclo</td>
+          <td>while(true) { <br> //ciclo infinito!! <br> }</td>
+        </tr>
+        <tr>
+          <td>do while</td>
+          <td>ciclo</td>
+          <td>do { <br> //ciclo infinito!! <br> }while(true);</td>
+        </tr>
+        <tr>
+          <td>for</td>
+          <td>ciclo</td>
+          <td>for(int i = 1; i > 0; i++) { <br> //ciclo infinito!! <br>}</td>
+        </tr>
+        <tr>
+          <td>Arreglo</td>
+          <td>Guardar varios valores en una variable</td>
+          <td>int[ ] numero = new int[19];</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+     <div id="ciclos">
+      <h3>Ciclos</h3>
+      <p>Un bucle o ciclo, en programación , es una sentencia que se realiza repetidas veces a un trozo aislado de código, hasta que la condición asignada a dicho bucle deje de cumplirse <br> Generalmente, un bucle es utilizado para hacer una acción repetida sin tener que escribir varias veces el mismo código, lo que ahorra tiempo, procesos y deja el código más claro y facilita su modificación en el futuro.</p>
+      <h3>Condicional</h3>
+      <p>Resultados de búsqueda
+         Las sentencias condicionales constituyen, junto con los bucles, los pilares de la programación estructurada, y su uso es una evolución de una sentencia en lenguaje ensamblador que ejecutaba la siguiente línea o no en función del valor de una condición.</p>
+    </div>
+
+    <section  class="ejemplos">
+      <figure>
+        <img src="cpp_1.png">
+        <img src="cpp_1_1.png">
+        <img src="cpp_2.png">
+        <img src="cpp_2_1.png">
+      </figure>
+    </section>
+ <footer class="header-footer">
+    <h2 class="infoch">infoch@n</h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="../../index.html"><button>Home</button></a>
+            </li>
+            <li>
+                <a href="../../../buscador/index.html" target="_blank"><button>Tiru-Buscador</button></a>
+            </li>
+            <li>
+                <a href="../../index.html" target="_blank"><button>Proyectos</button></a>
+            </li>
+        </ul>
+    </nav>
+ </footer>
+  </center>
+</body>
+</html>

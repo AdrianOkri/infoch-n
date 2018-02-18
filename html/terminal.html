@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Terminal</title>
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link rel="stylesheet" href="../css/terminal.css" />
+</head>
+<body>
+<center>
+  <header class="header">
+  	<h2 class="infoch">infoch@n</h2>
+  	<nav>
+  		<ul>
+  			<li>
+  				<a href="../infoch@n.html"><button>Home</button></a>
+  			</li>
+  			<li>
+  				<a href="../../buscador/tiru_buscador.html" target="_blank"><button>Tiru-Buscador</button></a>
+  			</li>
+  			<li>
+  				<a href="../infoch@n.html"><button>Proyectos</button></a>
+  			</li>
+  		</ul>
+  	</nav>
+  </header>
+</center>
+
+  <center>
+  <h1>Terminal</h1>
+  </center>
+
+  <section class="introduccion">
+    <figure>
+    	<img class="terminal_logo" src="../imagenes/terminal/terminal_logo.png">
+    </figure>
+    <h2>¿Qué es la terminal o CLI (command line interface) ?</h2>
+    <p>La terminal nos abre un mundo de posibilidades increíbles. Desde tener una navegación avanzada entre todos nuestros nodos y archivos, hasta contar con programas previamente instalados e increíbles que solo pueden ser ejecutados desde este entorno y ni siquiera sabemos que existen.</p>
+
+    <p>Sí, todo carece de una interfaz gráfica que lo hace ver un poco “feo”, pero, todo, todos los recursos se enfocan a la ejecución del programa, obteniendo resultados increíblemente rápidos.</p>
+
+    <p>¿Qué es lo que necesitamos?</p>
+
+    <p>Windows: Si tienes Windows 10, puedes usar bash shell de Ubuntu directamente.</p>
+
+    <p>Podemos utilizar http://cmder.net/ o https://www.cygwin.com/ para obtener resultados similares.</p>
+
+    <p> Mac: Buscar en tus aplicaciones “Terminal” o descargar iTerm2 </p>
+
+    <p>Linux: Dependiendo de tu distribución, es donde encontrarás la(s) terminal(es), y como usuario de Linux seguro la encontraras de inmediato.</p>
+  </section>
+
+  <section>
+  	<h2>Navegación entre directorios y listado de archivos ( pwd, cd, ls) </h2>
+  	<p>La primera ves que tu abres la terminal (y si antes no hiciste modificaciones), notaras que nos lleva al directorio “Home”, osea, la raiz donde tenemos todo tipo de permisos del sistema operativo. </p>
+    <p>Tenemos 3 tipos de nodos en el sistema operativo:</p>
+    <p>-Archivo -Directorio -Link</p>
+    <p>pwd: Este comado nos permite imprimir la ruta o directorio que estamos actualmente.</p>
+    <p>cd: Este comando nos permite cambiar de directorio, en algunos casos, el solo poner cd nos regresa al directorio “Home”. </p>
+    <p>cd nombre_del_directorio: Cambiamos de directorio, podemos tener un par de casos de uso con esto: </p>
+    <p>.Desde entrar a otro directorio que se encuentre por arriba de la ruta de donde encontramos: cd misfotos </p>
+    <p>Ir a un directorio aún más por arriba de donde me encuentro cd misfotos/vacaciones/personal</p>
+    <p>cd ~: Sin importar donde nos encontremos, con esto nos regresamos al directorio Home.</p>
+    <p>cd.. : Nos regresa a un directorio anterior</p>
+    <p>cd. : Nos lleva a un directorio superior </p>
+    <p>ls: Lista todos los archivos y directorios de la carpeta donde nos encontremos</p>
+    <p>La mayoría de comandos en nuestra terminal van a contar con banderas, que extiende la funcionalidad del mismo. Las agregamos con un “ - ”. Cómo por ejemplo: </p>
+    <p>ls -l : Lista todos los archivos y directorios, en forma de lista, y con información de los mismos.</p>
+    <p>ls -lt : Lista todos los archivos y directorios, en forma de lista, y con información de los mismos, agregando además, la hora en que fue creado el mismo</p>
+    <p>ls -lh: Lista todos los archivos y directorios, en forma de lista, y con información de los mismos, pero en formato más legible. </p>
+    <p>ls -lhr: Lista todos los archivos y directorios, en forma de lista, y con información de los mismos, de reversa </p>
+    <p>ls -lhS: Lista todos los archivos y directorios, en forma de lista, y con información de los mismos, pero en formato más legible, ordenado de mayor a menor peso.</p>
+    <p>ls -lhSr: Lista todos los archivos y directorios, en forma de lista, y con información de los mismos, pero en formato más legible, ordenado de menor a mayor peso.</p>
+    <p>clear: Limpia todo lo que tengamos en pantalla. </p>
+    <p>Los directorios no tiene peso por sí mismo, por lo general, tienen la referencia la suma de peso de todos los archivos contenidos por ellos. Para tener una mejor noción de cuánto pesa cada archivo y directorio, usamos el comando:</p>
+    <p>du -h -d 1</p>
+    <p>h : human readble</p>
+    <p>-h / --max-depth=1 : imprime a partir de aquí, el peso de cada archivo o carpeta</p>
+
+    <figure>
+    	<img class="imagen" src="../imagenes/terminal/terminal_cd.png" width="500">
+    	<img class="imagen ls" src="../imagenes/terminal/terminal_ls.png" width="500">
+    </figure>  
+  </section>
+
+  <section>
+    <h2>Creación de directorios, mover, copiar y renombrar archivos </h2>
+
+    <p>mkdir “nombre” : Crea un directorio, usando como nombre la palabra que pongamos después de mkdir. <br>
+<br>
+       mv origen destino: Mueve un archivo o directorio, dando el punto de origen y de destino, por ejemplo: <br>
+<br>
+       mv DSCF7496.jpg fotos/ ( Mueve el archivo DSCF7496.jpg a la carpera fotos/ )<br>
+<br>
+       Nota: No olvides el alcance que tenemos en los directorios. Por ejemplo, si estamos en fotos/ y queremos mover otra foto del directorio anterior:<br>
+<br>
+       mv ../DSCF7498.jpg ./ ( Mueve el archivo DSCF7498.jpg que está en la carpeta padre a esta carpeta hijo )<br>
+<br>
+       Además, de tener atajos para mover más archivos de rutas más específicas:<br>
+<br>
+       mv ~/Downloads/*jpg . (Todos los archivos jpg en el directorio Downloads, muévelos al directorio donde me encuentro actualmente )<br>
+<br>
+       cp origen destino: Copia un archivo, dando el punto de origen y de destino, por ejemplo:<br>
+<br>
+       cp ../foto.jpg . ( Copia el archivo foto.jpg de la carpeta padre a la ruta donde nos encontramos )<br>
+<br>
+       Para renombrar archivos, usamos el comando mv, pero no especificamos rutas:<br>
+<br>
+       mv foto.jpg imagen.jpg (cambia el nombre del archivo foto.jpg a imagen.jpg)<br>
+<br>
+       touch nombredelarchivo: Abre el archivo, pero no lo modifica. Importante para actualizar las fechas de modificación de archivos existentes.<br>
+<br>
+       Si el archivo no existe, lo crea, por ejemplo:<br>
+<br>
+       touch hola.txt : Crea un archivo hola.txt </p>
+  </section>
+
+  <section>
+  	<h2>Links (Referencias de archivos o directorios ) y eliminar elementos desde la terminal </h2>
+  	<p>Los links o ligas, son apuntadores que hacen referencia a un directorio o archivo sin importar dónde es que se encuentren.<br>
+<br>
+
+    Se usa el comando ln -s , teniendo en cuenta primero el archivo o la carpeta a la cuál queremos hacer referencia, seguido del simbolo que queremos asignarle:<br>
+<br>
+
+    ln -s flickr_photos-csv fotos.csv<br>
+<br>
+
+    Con los links, podemos hacer cualquiera de las demás operaciones vistas anteriormente: Copiar, pegar, mover.<br>
+<br>
+
+    El siguiente comando, debes usarlo con mucho cuidado, se trata de eliminar cualquier elemento desde la terminal. Una de las diferencias que tiene con la interfaz gráfica es que no nos va a pedir verificación, borra todo de inmediato, si o si, además, no existe algo como papelera de reciclaje donde podamos recuperar los archivos eliminados.<br>
+<br>
+
+    <strong> Nunca, de los nuncas uses rm -r / (Esto borrara todo en tu disco duro).</strong><br>
+<br>
+
+    Cómo si usarlo bien:<br>
+<br>
+
+    rm NombreDelArchivo: Elimina el archivo indicado después de rm<br>
+<br>
+
+    rm NombreDelDirectorio/* : Elimina todos los archivos que se encuentren dentro del directorio mencionado.<br>
+<br>
+
+    rm -r NombreDelDirectorio: Elimina el directorio mencionado, junto todos los archivos y más directorios que se encontrarán dentro de él. </p>
+  </section>
+
+  <section>
+  	<h2>Programas disponibles desde terminal: bc, md5, more, tail, cat, wc </h2>
+
+  	<p>bc: Aplicación de calculadora desde terminal, podemos hacer cualquier operación aritmética.<br>
+<br>
+       open NombreDelArchivo : Dependiendo del tipo de archivo, la terminal va a elegir el programa por defecto recomendado para abrirlo, por ejemplo, si es una imagen, en Mac, lo abrirá en preview.<br>
+<br>
+       open -a NombreDelPrograma NombreDelArchivo: Abrimos el archivo elegido con el programa que queremos. Ejemplo:<br>
+<br>
+       open -a atom index.html<br>
+<br>
+       md5 NombreDelArchivo: Nos permite crear una especie de huella digital de un archivo, usando el algoritmo md5. De hecho, no existe algún otro directorio o archivo en el mundo con el mismo md5<br>
+<br>
+       md5 calculos<br>
+<br>
+       more NombreDelArchivo: Esto es exclusivo para archivos de texto, nos muestra todo el contenido de un documento sin abrir un editor de texto. Si es mucho el texto, crea páginas totalmente navegables.<br>
+<br>
+       tail NombreDelArchivo: Esto es exclusivo para archivos de texto, muestra las últimas 10 líneas de un archivo de texto. Puedes modificar el flag para aumentar el número de lineas<br>
+<br>
+       tail -20 NombreDelArchivo<br>
+<br>
+       tail -f NombreDelArchivo: -f significa forever, quiere decir que la terminal se va a quedar escuchando el archivo hasta que suceda un cambio, cuando se haga un cambio en el archivo, va a imprimir como siempre los últimos 10 resultados. <br>
+<br>
+       Puedes salirte de cualquier programa en ejecución usando ctrl + c<br>
+<br>
+       cat NombreDelArchivo: Imprime todo el archivo, sin excepción, sin paginar. Puedes de hecho, abrir cualquier tipo de archivo binario (no solo texto)<br>
+<br>
+       Por cierto, dependiendo el tipo de archivo, es recomendado usar un comando u otro:<br>
+<br>
+       open: recomendado para archivos binarios como imágenes, videos, pdf. etc.<br>
+<br>
+       more, cat, tail: para archivos con texto de salida utf-8 o similares<br>
+<br>
+       wc NombreDelCurso: Es un contador de líneas, palabras y caracteres en ese archivo, en ese orden.<br>
+<br>
+       wc -l NombreDelCurso: Es un contador de líneas de un archivo<br>
+<br>
+       wc -c NombreDelCurso: Es un contador de caracteres de un archivo </p>
+  </section>
+
+  <section>
+  	<h2>Documentación disponible desde terminal ( man ) </h2>
+  	<p>Si usamos el comando man seguido del nombre del comando del cual que queremos saber más, tenemos como resultado una documentación bastante detallada junto con todas sus banderas disponibles y ejemplos de uso. Man no depende de internet y muy útil para descubrir nuevos comandos. </p>
+  </section>
+
+  <section>
+  	<h2>Monitoreo de procesos desde la terminal </h2>
+  	<p>La arquitectura de un sistema operativo Linux / *Nix nos permite identificar en qué carpeta se encuentran todos esos comandos ejecutables que hemos estado usando, basta con ejecutar el comando:<br>
+<br>
+    echo $PATH<br>
+<br>
+    Además con which NombreDelComando, podemos obtener el directorio donde ese comando en especifico es ejecutado. Ejemplo:<br>
+<br>
+    which cat<br>
+<br>
+    top : Es un comando que nos permite saber, segundo a segundo, que procesos están corriendo en nuestro ordenador.<br>
+<br>
+    PID (Process ID): es un identificador numérico que se le asigna a cada proceso que se está ejecutando en nuestro ordenador.<br>
+<br>
+    Para saber ese PID, en nuestro proceso, agregamos un &.<br>
+<br>
+    Teniendo ese PID, podemos matar ese proceso con el comando:<br>
+<br>
+    kill -9 PID<br>
+<br>
+    Volviendo a los procesos, existe una forma de identificar los procesos que se han estado ejecutando:<br>
+<br>
+    ps -wA</p>
+  </section>
+
+  <section>
+  	<h2>Busqueda de contenido, archivos, carpetas y uso de Grep Standard Input, Standard Output y Standard Erro</h2>
+  	<p>Independiente del lenguaje, cualquier programa tiene un flujo de entrada de datos, un flujo de salida y un modo de capturar errores.<br>
+<br>
+    En la terminal, podemos tener este mismo flujo de datos gracias a “<” y “>”.<br>
+<br>
+    Nuestro ejemplo fue:<br>
+<br>
+    bc -q < operaciones.bc > resultado<br>
+<br>
+    De un archivo llamado operaciones.bc, abrelo usando bc, y el resultado, mandalo a resultado</p>
+  </section>
+
+  <section>
+  	<h2>Busqueda de contenido, archivos, carpetas y uso de Grep</h2>
+  	<p>En este último ejercicio, vamos a practicar cómo buscar dentro de:<br>
+<br>
+    Un archivo de texto<br>
+    Varios archivos de texto que se encuentren en un directorio<br>
+    Todo el árbol de directorios, que el nombre de los archivos coincidan con la búsqueda<br>
+<br>
+    Todo gracias a grep<br>
+<br>
+    Búsqueda dentro de un archivo de texto<br>
+<br>
+    cat Archivo | grep TerminoDeBusqueda<br>
+<br>
+    Estamos leyendo todo el archivo, y por medio de grep, solo filtramos lo resultados de acuerdo al Término de Búsqueda<br>
+<br>
+    Para ser más concretos con la búsqueda, podemos usar expresiones regulares:<br>
+<br>
+    cat Archivo | grep ,TerminoDeBusqueda$<br>
+<br>
+    Y recordando el standard output, podemos mandarlo a un archivo de texto:<br>
+<br>
+    cat Archivo | grep ,TerminoDeBusqueda$ > mi_archivo </p>
+    <button class="pagina">2d pagina</button>
+  </section>
+<center>
+  <footer class="footer">
+   <a href="../infoch@n.html">Infoch@n</a>
+   <a href="terminal.html"><button>inicio</button></a>
+  </footer>
+</center>
+</body>
+</html>

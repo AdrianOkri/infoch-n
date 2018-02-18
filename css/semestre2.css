@@ -1,0 +1,37 @@
+body {
+	margin: 0;
+}
+
+button {
+	font-family: 'Philosopher', sans-serif;
+	margin: 10px;
+	background: #37717f;
+	background: linear-gradient(to left, #37717f, #2a3959);
+	cursor: pointer;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+.header-footer {
+	background: #1F313C;
+	padding: 15px;
+}
+
+.header-footer li {
+	display: inline-block;
+}
+
+.infoch {
+	font-family: 'Philosopher', sans-serif;
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+}
+
+.contruccion {
+	font-family: 'Philosopher', sans-serif;
+	font-size: 100px;
+}
+

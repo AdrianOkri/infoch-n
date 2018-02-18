@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+}
+
+.header {
+	background: #1F313C;
+	padding: 0;
+}
+
+.header li {
+	display: inline-block;
+}
+
+.infoch {
+	font-family: 'Philosopher', sans-serif;
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+}
+
+
+button {
+	font-family: 'Philosopher', sans-serif;
+	margin: 10px;
+	background: #2a4759;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+}

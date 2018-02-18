@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Philosopher', sans-serif;
+    margin: 10px;
+    background: #37717f;
+    background: linear-gradient(to left, #37717f, #2a3959);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+div{
+	margin: 20px;
+	padding-left: 30px;
+	border: 7px solid #1F313C;
+	border-radius: 50px;
+	background: black;
+	color: white;
+}
+
+h1{
+	padding: 10px;
+	font-size: 50px;
+}
+
+h2{
+	font-size: 10%;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.header-footer {
+    background: #1F313C;
+    padding: 15px;
+}
+
+.header-footer li {
+    display: inline-block;
+}
+
+.infoch {
+    font-family: 'Philosopher', sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+}
